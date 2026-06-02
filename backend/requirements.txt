@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+groq
+langchain
+langchain-community
+chromadb
+python-multipart
+pydantic
