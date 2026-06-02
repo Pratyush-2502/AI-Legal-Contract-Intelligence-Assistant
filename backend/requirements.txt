@@ -9,3 +9,4 @@ langchain-groq
 chromadb
 python-multipart
 pydantic
+sentence-transformers
