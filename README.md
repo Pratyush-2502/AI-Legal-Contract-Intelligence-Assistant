@@ -14,7 +14,7 @@ This repository contains a full-stack Retrieval-Augmented Generation (RAG) appli
 - [x] **Architecture Decision Records:** Located in `/docs/Architecture_Decision_Records.pdf`
 - [x] **Scalability Design Note:** Located in `/docs/Scalability_Design_Note.pdf`
 - [x] **API Documentation:** https://ai-legal-contract-intelligence-assistant.onrender.com/docs
-- [ ] **Demo Video:** `[Insert Loom/YouTube Link Here]`
+- [ ] **Demo Video:** `https://drive.google.com/file/d/1OrOFjaNnjqUsqfxfNVjz0mbKz6SrfsBW/view?usp=drivesdk`
 
 ## 🚀 Core Features
 * **Multi-Format Ingestion:** Supports automated parsing and chunking of PDF, TXT, and Markdown files.
