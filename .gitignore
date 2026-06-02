@@ -1,0 +1,21 @@
+# Node & React
+node_modules/
+dist/
+.DS_Store
+
+# Python & FastAPI
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment Variables & Secrets
+.env
+
+# Local Databases
+chroma_data/
+temp_*.pdf
+temp_*.txt
+temp_*.md
