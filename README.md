@@ -8,8 +8,8 @@ This repository contains a full-stack Retrieval-Augmented Generation (RAG) appli
 
 ## ✅ Deliverables Checklist
 - [x] **GitHub Repository:** Provided
-- [x] **Live Frontend URL:** https://ai-legal-contract-intelligence-assi.vercel.app/
-- [x] **Backend API URL:** https://ai-legal-contract-intelligence-assistant.onrender.com/
+- [x] **Live Frontend URL:** https://ai-legal-contract-intelligence-assi.vercel.app
+- [x] **Backend API URL:** https://ai-legal-contract-intelligence-assistant.onrender.com
 - [x] **Architecture Diagram:** Located in `/docs/System_Architecture_Diagram.png`
 - [x] **Architecture Decision Records:** Located in `/docs/Architecture_Decision_Records.pdf`
 - [x] **Scalability Design Note:** Located in `/docs/Scalability_Design_Note.pdf`
@@ -28,7 +28,8 @@ This repository contains a full-stack Retrieval-Augmented Generation (RAG) appli
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Pratyush-2502/AI-Legal-Contract-Intelligence-Assistant.git](https://github.com/Pratyush-2502/AI-Legal-Contract-Intelligence-Assistant.git)
+### 1. Clone the Repository
+git clone https://github.com/Pratyush-2502/AI-Legal-Contract-Intelligence-Assistant.git
 cd AI-Legal-Contract-Intelligence-Assistant
 ```
 
@@ -43,7 +44,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the `backend` directory and add your Groq API Key:
 ```env
-GROQ_API_KEY=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
+GROQ_API_KEY=your_api_key_here
 ```
 
 Start the API Server:
