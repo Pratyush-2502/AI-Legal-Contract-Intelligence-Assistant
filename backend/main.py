@@ -30,10 +30,10 @@ app = FastAPI(title="AI Legal Contract Assistant API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],  # Allows your Vercel frontend (and any other origin) to connect
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allows all actions (GET, POST, OPTIONS, etc.)
+    allow_headers=["*"],  # Allows all custom headers
 )
 
 # ---------------- DB ----------------
