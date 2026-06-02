@@ -10,3 +10,4 @@ chromadb
 python-multipart
 pydantic
 fastembed
+pypdf
