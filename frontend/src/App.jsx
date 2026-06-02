@@ -33,7 +33,7 @@ function App() {
         formData.append("file", files[i]);
 
         // Hits the rubric-compliant /documents endpoint
-        const response = await fetch("http://localhost:8000/documents", {
+        const response = await fetch("https://ai-legal-contract-intelligence-assistant.onrender.com/documents", {
           method: "POST",
           body: formData,
         });
@@ -64,7 +64,7 @@ function App() {
     setAnswerData(null);
 
     try {
-      const response = await fetch("http://localhost:8000/query", {
+      const response = await fetch("https://ai-legal-contract-intelligence-assistant.onrender.com/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
@@ -91,7 +91,7 @@ function App() {
     setActiveAction(actionName);
 
     try {
-      const response = await fetch(`http://localhost:8000/agent/${endpoint}`, {
+      const response = await fetch(`https://ai-legal-contract-intelligence-assistant.onrender.com/agent/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({}),
