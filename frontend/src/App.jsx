@@ -166,8 +166,11 @@ function App() {
           {answerData && !answerData.error && (
             <div className="answer-box">
               <h3>Answer</h3>
-              <div className="ai-markdown-content">
-                <ReactMarkdown>{answerData.answer}</ReactMarkdown>
+              <div className="ai-markdown-content" style={{ lineHeight: "1.6" }}>
+                <ReactMarkdown>
+                  
+                  {answerData.answer ? answerData.answer.replace(/\n+/g, '\n\n') : ""}
+                </ReactMarkdown>
               </div>
               
               {answerData.sources && answerData.sources.length > 0 && (
@@ -176,11 +179,15 @@ function App() {
                   <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
                     {answerData.sources.map((s, i) => {
                       const fileName = s.source ? s.source.split('/').pop().split('\\').pop() : "Unknown Document";
+                      
+                      // Brute-force clean the text: strip out #, *, `, and _ characters before slicing
+                      const cleanContent = s.content ? s.content.replace(/[`#*_]/g, '') : "";
+                      
                       return (
                         <li key={i} style={{ marginBottom: "15px", padding: "10px", backgroundColor: "#f9f9f9", borderRadius: "5px" }}>
                           <strong>📄 {fileName}</strong>
-                          <div style={{ marginTop: "8px", fontSize: "0.9em", color: "#555" }}>
-                            "...{s.content.slice(0, 400)}..."
+                          <div style={{ marginTop: "8px", fontSize: "0.9em", color: "#555", whiteSpace: "pre-wrap" }}>
+                            ...{cleanContent.slice(0, 300)}...
                           </div>
                         </li>
                       );
