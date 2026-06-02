@@ -1,20 +1,20 @@
 # AI Legal Contract Intelligence Assistant
 
 **Tachyon Systems - Founding AI Engineer (Architect Track) Technical Challenge** **Assignment ID:** TS-NITUK-2026-003  
-**Candidate:** NIT Uttarakhand, 2026 Batch  
+**Candidate:** Pratyush Raj | NIT Uttarakhand, 2026 Batch  
 
 ## 📌 Overview
 This repository contains a full-stack Retrieval-Augmented Generation (RAG) application designed to analyze, summarize, and extract insights from legal contracts. It utilizes a decoupled architecture featuring a React frontend, an asynchronous FastAPI backend, and a strictly orchestrated LangChain/Groq AI agent layer.
 
 ## ✅ Deliverables Checklist
 - [x] **GitHub Repository:** Provided
-- [x] **Live Frontend URL:** `[Insert Your Vercel/Netlify Link Here]`
-- [x] **Backend API URL:** `[Insert Your Render/Railway Link Here]`
+- [x] **Live Frontend URL:** https://ai-legal-contract-intelligence-assi.vercel.app/
+- [x] **Backend API URL:** https://ai-legal-contract-intelligence-assistant.onrender.com/
 - [x] **Architecture Diagram:** Located in `/docs/System_Architecture_Diagram.png`
 - [x] **Architecture Decision Records:** Located in `/docs/Architecture_Decision_Records.pdf`
 - [x] **Scalability Design Note:** Located in `/docs/Scalability_Design_Note.pdf`
-- [x] **API Documentation:** Auto-generated at `[Insert Backend API URL]/docs`
-- [x] **Demo Video:** `[Insert Loom/YouTube Link Here]`
+- [x] **API Documentation:** https://ai-legal-contract-intelligence-assistant.onrender.com/docs
+- [ ] **Demo Video:** `[Insert Loom/YouTube Link Here]`
 
 ## 🚀 Core Features
 * **Multi-Format Ingestion:** Supports automated parsing and chunking of PDF, TXT, and Markdown files.
@@ -28,8 +28,8 @@ This repository contains a full-stack Retrieval-Augmented Generation (RAG) appli
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/tachyon-contract-ai.git](https://github.com/yourusername/tachyon-contract-ai.git)
-cd tachyon-contract-ai
+git clone [https://github.com/Pratyush-2502/AI-Legal-Contract-Intelligence-Assistant.git](https://github.com/Pratyush-2502/AI-Legal-Contract-Intelligence-Assistant.git)
+cd AI-Legal-Contract-Intelligence-Assistant
 ```
 
 ### 2. Backend Setup (FastAPI)
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the `backend` directory and add your Groq API Key:
 ```env
-GROQ_API_KEY=your_api_key_here
+GROQ_API_KEY=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
 ```
 
 Start the API Server:
